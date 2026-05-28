@@ -1,10 +1,8 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class Maths {
 
     public static void main(String[] args) {
-
-        int x = 10;
 
         // Augmentation operators
         // x += y;
