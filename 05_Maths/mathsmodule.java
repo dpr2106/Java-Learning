@@ -1,23 +1,24 @@
+import java.util.Scanner;
+
 public class mathsmodule {
     public static void main(String[] args) {
-        // Learning math module = provides methods for performing basic numeric
-        // operations such as elementary exponential, logarithm, square root, and
-        // trigonometric functions.
+        // Learning Hypotenuse = the longest side of a right triangle via math module.
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Math.PI: " + Math.PI);
-        System.out.println("Math.E: " + Math.E);
+        double a;
+        double b;
+        double c;
 
-        int result;
+        System.out.print("Enter the length of side a: ");
+        a = scanner.nextDouble();
 
-        result = (int) Math.pow(2, 20);
-        result = Math.abs(-5);
-        result = (int) Math.sqrt(16);
-        result = (int) Math.round(3.14);
-        result = (int) Math.ceil(3.14);
-        result = (int) Math.floor(3.99);
-        result = (int) Math.max(10, 20);
-        result = (int) Math.min(10, 20);
+        System.out.print("Enter the length of side b: ");
+        b = scanner.nextDouble();
 
-        System.out.println(result);
+        c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+        System.out.println("The length of the hypotenuse of the required triangle is: " + c);
+
+        scanner.close();
     }
 }
