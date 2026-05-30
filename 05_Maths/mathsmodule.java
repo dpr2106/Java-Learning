@@ -2,23 +2,21 @@ import java.util.Scanner;
 
 public class mathsmodule {
     public static void main(String[] args) {
-        // Learning Hypotenuse = the longest side of a right triangle via math module.
         Scanner scanner = new Scanner(System.in);
 
-        double a;
-        double b;
-        double c;
+        double radius;
+        double circumference;
+        double area;
+        double volume;
 
-        System.out.print("Enter the length of side a: ");
-        a = scanner.nextDouble();
+        System.out.print("Enter the radius of the circle: ");
+        radius = scanner.nextDouble();
 
-        System.out.print("Enter the length of side b: ");
-        b = scanner.nextDouble();
+        circumference = 2 * Math.PI * radius;
 
-        c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-
-        System.out.println("The length of the hypotenuse of the required triangle is: " + c);
+        System.out.println("The circumference of the circle is: " + circumference);
 
         scanner.close();
     }
 }
+// This is an test update as there was account change in the Github
