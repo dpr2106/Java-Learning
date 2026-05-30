@@ -15,6 +15,10 @@ public class mathsmodule {
         circumference = 2 * Math.PI * radius;
 
         System.out.println("The circumference of the circle is: " + circumference);
+        area = Math.PI * Math.pow(radius, 2);
+        System.out.println("The area of the circle is: " + area + "cm^2");
+        volume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+        System.out.println("The volume of the sphere is: " + volume + "cm^3");
 
         scanner.close();
     }
