@@ -1,26 +1,16 @@
-import java.util.Scanner;
-
 public class mathsmodule {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        double radius;
-        double circumference;
-        double area;
-        double volume;
+        String name = "SpongeBob";
+        char firstLetter = 'S';
+        int age = 30;
+        double height = 60.5;
+        boolean isemployed = true;
 
-        System.out.print("Enter the radius of the circle: ");
-        radius = scanner.nextDouble();
-
-        circumference = 2 * Math.PI * radius;
-
-        System.out.println("The circumference of the circle is: " + circumference);
-        area = Math.PI * Math.pow(radius, 2);
-        System.out.println("The area of the circle is: " + area + "cm^2");
-        volume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
-        System.out.println("The volume of the sphere is: " + volume + "cm^3");
-
-        scanner.close();
+        System.out.printf("Hello %s", name);
+        System.out.printf("\nThe first letter of your name is %c", firstLetter);
+        System.out.printf("\nYou are %d years old", age);
+        System.out.printf("\nYour height is %.1f inches", height);
+        System.out.printf("\nAre you employed? %b", isemployed);
     }
 }
-// This is an test update as there was account change in the Github
