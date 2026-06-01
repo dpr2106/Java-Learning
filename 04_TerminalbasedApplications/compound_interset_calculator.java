@@ -22,10 +22,15 @@ public class compound_interset_calculator {
         System.out.print("Enter the number of years: ");
         years = scanner.nextInt();
 
+        System.out.print("\nThe Principal Amount you entered is: " + principal);
+        System.out.print("\nThe Annual Interest Rate you entered is: " + rate);
+        System.out.print("\nThe Number of times interest is compounded per year is: " + timesCompounded);
+        System.out.print("\nThe Number of years you entered is: " + years);
+
         // Calculate compound interest
         amount = principal * Math.pow(1 + rate / timesCompounded, timesCompounded * years);
 
-        System.out.println("The compound interest is: " + (amount - principal));
+        System.out.println("\nThe compound interest is: " + (amount - principal));
         scanner.close();
     }
 }
